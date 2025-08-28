@@ -236,21 +236,6 @@ A: The code is geared to IPv4 discovery and `A` records. You can extend it to di
 **Q: Health checks?**  
 A: Add a compose `healthcheck:` that ensures DNS resolution returns either your current IP or that PDNS is reachable.
 
----
-
-## Roadmap / ideas
-
-- Optional IPv6 (`AAAA`) updater.
-- Multiple records/hostnames from one process via a small YAML config.
-- Pluggable IP discovery backends and retries/jitter.
-- Metrics endpoint (Prometheus) for last update, current IP, error count.
-- Better structured logging.
-
----
-
-## License
-
-MIT (suggested). If you prefer another license, update this section and add a `LICENSE` file.
 
 ---
 
