@@ -6,25 +6,6 @@ Small Docker application that periodically discovers your public IPv4 address an
 
 ---
 
-## Table of contents
-
-- [Why](#why)
-- [How it works](#how-it-works)
-- [Prerequisites](#prerequisites)
-- [Quick start (docker-compose)](#quick-start-docker-compose)
-- [Docker image & runtime](#docker-image--runtime)
-- [Configuration](#configuration)
-  - [Environment variables](#environment-variables)
-- [Local development](#local-development)
-- [Operational notes](#operational-notes)
-- [Troubleshooting](#troubleshooting)
-- [Security considerations](#security-considerations)
-- [FAQ](#faq)
-- [Roadmap / ideas](#roadmap--ideas)
-- [License](#license)
-
----
-
 ## Why
 
 - Keep a hostname (e.g. `home.example.com`) pointing at your changing residential IP.
