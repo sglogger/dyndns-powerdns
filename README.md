@@ -289,6 +289,26 @@ INTERVAL_SECONDS = "1800"     # 10 Minuten
 
 ---
 
+## Logs / Errors
+
+Check with docker logs: `docker logs dyndns`:
+````
+user@tools:~/docker-containers/dyndns$ docker logs dyndns
+[dyndns] Start; INTERVAL_SECONDS=1800
+[dyndns] 2025-08-28T21:06:49+02:00 running update...
+No change for A dyn.example.net.: 188.63.12.12
+[dyndns] Start; INTERVAL_SECONDS=1800
+[dyndns] 2025-08-28T21:07:06+02:00 running update...
+No change for A dyn.example.net.: 188.63.12.12
+[dyndns] 2025-08-28T21:37:06+02:00 running update...
+No change for A dyn.example.net.: 188.63.12.12
+[dyndns] 2025-08-28T22:07:07+02:00 running update...
+No change for A dyn.example.net.: 188.63.12.12
+```
+
+
+---
+
 ### Thanks
 
 - PowerDNS team & docs.
