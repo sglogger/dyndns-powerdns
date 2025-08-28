@@ -1,0 +1,25 @@
+services:
+  dyndns:
+    build: .
+    image: mrmouse/dyndns:latest
+    container_name: dyndns
+    restart: unless-stopped
+    # environment data -> see .env file
+    environment: 
+      PDNS_API_URL: ${PDNS_API_URL}
+      PDNS_API_KEY: ${PDNS_API_KEY}
+      PDNS_SERVER_ID: ${PDNS_SERVER_ID}
+      PDNS_ZONE: ${PDNS_ZONE}
+      PDNS_RECORD: ${PDNS_RECORD}
+
+      # Optional (Defaults in Script):
+      PDNS_TTL: ${PDNS_TTL}
+      INTERVAL_SECONDS: ${INTERVAL_SECONDS}
+
+    # Falls dein PDNS-API-Host via Docker-Netz erreichbar sein soll:
+    # networks:
+    #   - internal
+
+#networks:
+#  internal:
+#    driver: bridge
